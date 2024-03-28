@@ -3,5 +3,8 @@ import "@hotwired/turbo-rails"
 import "controllers"
 import "jquery"
 import "@nathanvda/cocoon"
-
-
+//
+import "bootstrap"
+import "roboto-fontface"
+//
+import "../src/stylesheets/application"
