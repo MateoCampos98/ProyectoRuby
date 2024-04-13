@@ -9,6 +9,7 @@ class TasksController < ApplicationController
       current_user.id,
       current_user.id,
     ).group(:id)
+    @tasks = (current_user.owned_tasks + current_user.tasks).uniq
   end
 
   # GET /tasks/1 or /tasks/1.json
